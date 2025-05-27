@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/contactsSlice";
+import { deleteContact } from "../../redux/contactsOps";
 import styles from "./Contact.module.css";
 
 export default function Contact({ contact }) {
@@ -8,7 +8,7 @@ export default function Contact({ contact }) {
   return (
     <>
       <span>
-        {contact.name}: {contact.number}
+        {contact.name}: {contact.phone}
       </span>
       <button
         className={styles.button}
